@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motylki Any</title>
+  <style>
+    body {
+      background-color: #fce4ec; /* różowy */
+      color: #333; /* ciemny szary dla tekstu */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .quote {
+      font-size: 1.5em;
+      font-style: italic;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .motyl-gif {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Strona Główna</h1>
+    <div class="quote" id="quote">
+      <!-- JavaScript będzie wstawiał tutaj losowy cytat -->
+    </div>
+    <img src="motyl.gif" alt="Motylki" class="motyl-gif">
+  </div>
+  <div class="footer">
+    Jeśli masz jakieś pomysły, pisz (albo jeśli są błędy na stronie) i kontakt: <a href="https://tumblr.com">tumblr</a> / <a href="https://instagram.com">instagram</a>
+  </div>
+
+  <script>
+    // Skrypt do losowania cytatu
+    const quotes = [
+      "Cytat 1",
+      "Cytat 2",
+      "Cytat 3",
+      "Cytat 4",
+      "Cytat 5",
+      "Cytat 6",
+      "Cytat 7",
+      "Cytat 8",
+      "Cytat 9",
+      "Cytat 10"
+    ];
+
+    const quoteElement = document.getElementById('quote');
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteElement.textContent = quotes[randomIndex];
+  </script>
+</body>
+</html>

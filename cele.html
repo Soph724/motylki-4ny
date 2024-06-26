@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twoje Cele - Motylki Any</title>
+  <style>
+    body {
+      background-color: #fce4ec; /* różowy */
+      color: #333; /* ciemny szary dla tekstu */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    form {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="number"] {
+      width: 100px;
+      padding: 5px;
+      font-size: 1em;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Twoje Cele</h1>
+    <form id="goalsForm">
+      <label for="sw">Początkowa waga:</label>
+      <input type="number" id="sw" name="sw" step="0.1" required><br>
+      <label for="cw">Aktualna waga:</label>
+      <input type="number" id="cw" name="cw" step="0.1" required><br>
+      <label for="gw">Mały cel wymarzonej wagi:</label>
+      <input type="number" id="gw" name="gw" step="0.1" required><br>
+      <label for="ugw">Główny cel wymarzonej wagi:</label>
+      <input type="number" id="ugw" name="ugw" step="0.1" required><br>
+      <button type="submit">Zapisz cele</button>
+    </form>
+  </div>
+  <div class="footer">
+    Jeśli masz jakieś pomysły, pisz (albo jeśli są błędy na stronie) i kontakt: <a href="https://tumblr.com">tumblr</a> / <a href="https://instagram.com">instagram</a>
+  </div>
+</body>
+</html>
